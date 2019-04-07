@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.elsa.garagesale">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:node="replace">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.com.vansuita.pickimage.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/picker_provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".Daftar"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Tambah_barang"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Barang"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Keranjang_barang"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Menu_belum_login"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Menu_pembeli"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Menu_penjual"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Pilih_kurir"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Konfirmasi_pembeli"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Listview_konfirmasi_pembeli"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Listview_konfirmasi_penjual"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Konfirmasi_penjual"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

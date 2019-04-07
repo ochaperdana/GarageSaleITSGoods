@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dsadasfd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        app:srcCompat="@drawable/gallery"
+                        tools:srcCompat="@tools:sample/avatars" />
+
+                    <TextView
+                        android:id="@+id/nama_barang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imageView"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="-1dp"
+                        android:text="nama barang" />
+
+                    <TextView
+                        android:id="@+id/harga_barang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rating_total"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toEndOf="@+id/textView17"
+                        android:text="harga" />
+
+                    <TextView
+                        android:id="@+id/tanggal_masuk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nama_barang"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="4dp"
+                        android:text="tanggal masuk" />
+
+                    <TextView
+                        android:id="@+id/stok_preview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nama_barang"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="-20dp"
+                        android:layout_marginEnd="6dp"
+                        android:text="stok" />
+
+                    <TextView
+                        android:id="@+id/rating_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nama_toko"
+                        android:layout_alignParentStart="true"
+                        android:text="rating" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rating_total"
+                        android:text="Rp" />
+
+                    <TextView
+                        android:id="@+id/nama_toko"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tanggal_masuk"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="3dp"
+                        android:text="nama toko" />
+
+                    <EditText
+                        android:id="@+id/stok"
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/harga_barang"
+                        android:layout_alignParentStart="true"
+                        android:layout_margin="8dp"
+                        android:layout_toStartOf="@id/beli"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:text="1" />
+
+                    <Button
+                        android:id="@+id/beli"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/harga_barang"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/button_style"
+                        android:backgroundTint="@color/colorAccent"
+                        android:text="beli"
+                        android:textColor="@android:color/white" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/horizontalscrollview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/stok"
+                        android:layout_alignParentStart="true"
+                        android:layout_margin="16dp">
+
+                        <LinearLayout
+                            android:id="@+id/list_gambar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView2"
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/gallery"
+                                tools:srcCompat="@tools:sample/avatars" />
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/deskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardView"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="3dp"
+                android:text="deskripsi" />
+
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/deskripsi"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="3dp"
+                android:text="ulasan" />
+
+            <EditText
+                android:id="@+id/ulasan"
+                android:layout_width="264dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ulasan_spinner"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="25dp"
+                android:layout_toStartOf="@+id/kirim"
+                android:ems="10"
+                android:inputType="textMultiLine" />
+
+            <Spinner
+                android:id="@+id/ulasan_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_below="@+id/textView11"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="0dp" />
+
+            <Button
+                android:id="@+id/kirim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ulasan_spinner"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="3dp"
+                android:background="@drawable/button_style"
+                android:backgroundTint="@color/colorAccent"
+                android:text="kirim"
+                android:textColor="@android:color/white" />
+
+            <ListView
+                android:id="@+id/listview_ulasan"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ulasan"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="2dp" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

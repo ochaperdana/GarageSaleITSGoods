@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgho">
+
+    <!--<TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="221dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginBottom="249dp"
+        android:text="Garage Sale"
+        android:textSize="30sp" />-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.3"
+        android:background="@drawable/bgho"
+        android:backgroundTint="@color/solid_black" />
+
+    <ImageView
+        android:layout_width="149dp"
+        android:layout_height="163dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="281dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginBottom="287dp"
+        android:alpha="2.5"
+        android:scaleType="fitCenter"
+        tools:srcCompat="@drawable/logo_nobackground" />
+</RelativeLayout>

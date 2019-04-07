@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginBottom="24dp"
+    android:foreground="?attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <ImageView
+            android:id="@+id/gambar_barang"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:alpha="0.3"
+            android:background="#424242" />
+
+        <TextView
+            android:id="@+id/judul_barang"
+            style="@style/RobotoTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/gambar_barang"
+            android:layout_marginStart="16dp"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="8pt"
+            tools:text="Nama Barang" />
+
+        <TextView
+            android:id="@+id/harga_barang"
+            style="@style/RobotoTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gambar_barang"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="16dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/colorAccent"
+            tools:text="Rp650.000" />
+
+        <TextView
+            android:id="@+id/rating_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/harga_barang"
+            android:paddingLeft="16dp"
+            android:textSize="14dp"
+            tools:text="Rating : 2.0" />
+
+        <TextView
+            android:id="@+id/tanggal_masuk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/harga_barang"
+            android:layout_alignParentEnd="true"
+            android:text="tanggal" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+

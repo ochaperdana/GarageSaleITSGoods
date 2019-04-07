@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+
+            <ImageView
+                android:id="@+id/gambar_barang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/nama_lengkap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_toEndOf="@id/gambar_barang"
+                android:text="nama barang" />
+
+            <TextView
+                android:id="@+id/komentar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rating_total"
+                android:layout_margin="8dp"
+                android:layout_toEndOf="@id/gambar_barang"
+                android:text="komentar" />
+
+            <TextView
+                android:id="@+id/rating_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nama_lengkap"
+                android:layout_margin="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_toStartOf="@+id/tanggal_masuk"
+                android:layout_toEndOf="@id/gambar_barang"
+                android:text="rating" />
+
+            <TextView
+                android:id="@+id/tanggal_masuk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nama_lengkap"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="8dp"
+                android:text="tanggal" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dsadasfd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/RobotoTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="konfirmasi pembayaran"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="8pt" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="upload bukti pembayaran"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="6pt" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="800dp"
+            android:layout_margin="16dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="2dp"
+                app:srcCompat="@drawable/gallery"
+                tools:srcCompat="@drawable/gallery" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView"
+                app:cardCornerRadius="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp">
+
+                    <TextView
+                        android:id="@+id/nama_barang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="judul" />
+
+                    <TextView
+                        android:id="@+id/harga_barang"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nama_barang"
+                        android:layout_toEndOf="@+id/textView17"
+                        android:text="harga" />
+
+                    <TextView
+                        android:id="@+id/jumlah"
+                        android:layout_width="127dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nama_barang"
+                        android:layout_alignParentEnd="true"
+                        android:text="jumlah" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nama_barang"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginRight="4dp"
+                        android:text="Rp" />
+
+                    <TextView
+                        android:id="@+id/kurir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/harga_barang"
+                        android:layout_alignParentStart="true"
+                        android:text="kurir" />
+
+                    <Button
+                        android:id="@+id/konfirmasi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/kurir"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/button_style"
+                        android:backgroundTint="@color/colorAccent"
+                        android:padding="8dp"
+                        android:text="konfirmasi"
+                        android:textColor="@android:color/white" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
